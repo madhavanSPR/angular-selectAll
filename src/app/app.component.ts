@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   selectall: boolean;
   disabled = false;
+  extra: boolean;
   ngOnInit() {
     this.selectall = false;
   }
@@ -17,6 +18,13 @@ export class AppComponent {
       this.selectall = true;
     } else if (event.checked == false) {
       this.selectall = false;
+    }
+  }
+  onChange(event) {
+    if (event.checked == true) {
+      this.extra = true;
+    } else {
+      this.extra = false;
     }
   }
 }
