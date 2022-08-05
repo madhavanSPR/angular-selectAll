@@ -1,8 +1,19 @@
 <div class="boxes">
-<mat-checkbox color="primary" (change)="SelectAll($event)">SELECT ALL</mat-checkbox>
-<mat-checkbox color="primary" (change)="onChange($event)"> CHANGE DISABLE </mat-checkbox>
-<br>
-<mat-checkbox color="primary" [checked]="selectall"> ONE </mat-checkbox><br>
-<mat-checkbox color="primary" [(ngModel)]="extra" [disabled]="disabled"> TWO </mat-checkbox><br>
-<mat-checkbox color="primary" [checked]="selectall"> THREE </mat-checkbox><br>
+  <mat-checkbox color="primary" (change)="SelectAll($event)"
+    >SELECT ALL</mat-checkbox
+  >
+  <mat-checkbox
+    style="margin-left:2rem"
+    color="primary"
+    (change)="onChange($event)"
+  >
+    CHANGE DISABLE
+  </mat-checkbox>
+  <br />
+  <mat-checkbox color="primary" [checked]="selectall"> ONE </mat-checkbox><br />
+  <mat-checkbox color="primary" [(ngModel)]="extra" [disabled]="disabled">
+    TWO </mat-checkbox
+  ><br />
+  <mat-checkbox color="primary" [checked]="selectall"> THREE </mat-checkbox
+  ><br />
 </div>
